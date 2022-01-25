@@ -4,10 +4,11 @@ let selectedTd;
 
 function highlight(td) {
     if (selectedTd) {
+        //이미 강조되어있는 칸이 있다면 원상태로 바꿔준다.
         selectedTd.classList.remove("highlight");
     }
     selectedTd = td;
-    selectedTd.classList.add("highlight"); 
+    selectedTd.classList.add("highlight"); // 새로운 td를 강조해준다.
 }
 
 
