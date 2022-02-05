@@ -1,0 +1,19 @@
+{
+	"todos": [
+	{
+	"id": 1,
+	"title": "조카랑 게임하기", 
+	"completed": false
+	},
+	{
+	"id": 2,
+	"title": "quis ut nam facilis et officia qui",
+	"completed": false
+	},
+	{
+	"id": 3,
+	"title": "fugiat veniam minus",
+	"completed": false
+	}
+]
+}
