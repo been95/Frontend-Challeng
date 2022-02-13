@@ -1,10 +1,14 @@
 import "./style.css";
+import { api } from "./network";
 
 const app = document.querySelector("#app");
 
-fetch("http://localhost:3004/todos")
-  .then((res) => res.json())
-  .then(console.log);
+async function a() {
+  const data = await api.fetchAll();
+  console.log(data);
+}
+
+a();
 
 app.innerHTML = `
 <div class="todo-wrapper">
