@@ -5,9 +5,12 @@
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview",
-    "api":"json-server --watch db.json --port 3004"
+    "api": "json-server --watch db.json --port 3004"
   },
   "devDependencies": {
     "vite": "^2.7.2"
+  },
+  "dependencies": {
+    "request": "^2.88.2"
   }
 }
