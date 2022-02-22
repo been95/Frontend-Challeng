@@ -1,1 +1,0 @@
-{"version":3,"file":"style.css","mappings":"AAAA,EACI,SACJ,CACA,IACI,WACJ","sources":["webpack://challeng/./src/css/style.css"],"sourcesContent":["p{\r\n    color:red;\r\n}\r\ndiv{\r\n    width: 100px;\r\n}"],"names":[],"sourceRoot":""}
