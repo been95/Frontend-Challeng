@@ -23,7 +23,10 @@ export const api = {
       console.log("에러", e);
     }
   },
-  update: () => {},
+  update: async() => {
+
+  },
   add: () => {},
-  delete: () => {},
+  delete: () => {
+  },
 };
