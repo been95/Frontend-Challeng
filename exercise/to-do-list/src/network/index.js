@@ -24,9 +24,21 @@ export const api = {
     }
   },
   update: async() => {
+    try{
+      const res = await fetch ();
+      method : "PATCH",
 
+    }
   },
-  add: () => {},
+  add: () => {
+    try{
+      const res = await fetch ();
+      method : "POST",
+    }
+  },
   delete: () => {
+    try{
+      const res = await fetch ();
+    }
   },
 };
