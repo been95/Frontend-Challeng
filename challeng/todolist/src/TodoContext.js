@@ -4,23 +4,23 @@ const initialTodos = [
   {
     id: 1,
     text: "영어숙제하기",
-    done: true
+    done: true,
   },
   {
     id: 2,
     text: "일본어일기쓰기",
-    done: true
+    done: true,
   },
   {
     id: 3,
-    text: "투투리스트만들기",
-    done: false
+    text: "투두리스트만들기",
+    done: false,
   },
   {
     id: 4,
     text: "드로잉숙제하기",
-    done: false
-  }
+    done: false,
+  },
 ];
 
 function todoReducer(state, action) {
@@ -28,11 +28,9 @@ function todoReducer(state, action) {
     case "CREATE":
       return state.concat(action.todo);
     case "TOGGLE":
-      return state.map(todo =>
-        todo.id === action.id ? { ...todo, done: !todo.done } : todo
-      );
+      return state.map((todo) => (todo.id === action.id ? { ...todo, done: !todo.done } : todo));
     case "REMOVE":
-      return state.filter(todo => todo.id !== action.id);
+      return state.filter((todo) => todo.id !== action.id);
     default:
       throw new Error(`Unhandled action type: ${action.type}`);
   }
@@ -49,9 +47,7 @@ export function TodoProvider({ children }) {
   return (
     <TodoStateContext.Provider value={state}>
       <TodoDispatchContext.Provider value={dispatch}>
-        <TodoNextIdContext.Provider value={nextId}>
-          {children}
-        </TodoNextIdContext.Provider>
+        <TodoNextIdContext.Provider value={nextId}>{children}</TodoNextIdContext.Provider>
       </TodoDispatchContext.Provider>
     </TodoStateContext.Provider>
   );
