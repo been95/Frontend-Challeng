@@ -12,6 +12,8 @@ const GlobalStyle = createGlobalStyle`
   }
 `;
 
+// 1. PROVIDER: CONTEXT API, REDUX, REDUX THUNK, REDUX SAGA, REDUX TOOLKIT, RECOIL....
+// 2. REDUCER: prev state(이전 상태객체) -> next state(새로운 객체)체
 function App() {
   return (
     <TodoProvider>

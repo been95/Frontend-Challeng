@@ -23,6 +23,19 @@ const initialTodos = [
   },
 ];
 
+// action
+//var changeGreetingAction = {
+//  type: "CHANGE_GREETING",
+//  todo: "hello",
+//};
+
+// actionvar changeGreetingActionCreator = (message) => {
+//  return {
+// type: "CHANGE_GREETING",
+// todo: message,
+//};
+//};
+
 function todoReducer(state, action) {
   switch (action.type) {
     case "CREATE":
