@@ -1,16 +1,12 @@
 import React from "react";
-import Home from "./components/Home";
+import Home from "./components/home/Home";
 
 /*function App() {
   return; <Home name="been" color="blue" />;
 }*/
 
 function App() {
-  return (
-    <>
-      <Home name="been" color="blue" />
-    </>
-  );
+  return <Home />;
 }
 
 export default App;
