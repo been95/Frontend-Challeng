@@ -16,8 +16,7 @@ function Home(){
   }, []);
   return (
     <div className="home">
-      <div className="box spring"
-      >spring</div>
+      <div className="box spring">spring</div>
       <div
         className="box summer"
         style={{
@@ -26,8 +25,15 @@ function Home(){
       >
         summer
       </div>
-      <div className="box autumn">autumn</div>
+      <div className="box autumn"
+      style={{
+        backgroundPositionX: scrolly /-3
+      }}
+      >autumn</div>
       <div className="box winter"
+      style={{
+        backgroundPositionY: scrolly / 1
+      }}
       >winter</div>
 
       <p className="desc desc1"
